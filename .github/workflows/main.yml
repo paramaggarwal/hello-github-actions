@@ -5,8 +5,8 @@ jobs:
     name: Hello world action
     runs-on: ubuntu-latest    
     steps:
-    - uses: actions/checkout
-    - uses: actions/setup-node
+    - uses: actions/checkout@master
+    - uses: actions/setup-node@master
 #     - uses: ./action-a
     - run: npm --version
     - run: node --version
