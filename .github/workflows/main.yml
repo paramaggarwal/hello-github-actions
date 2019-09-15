@@ -6,6 +6,9 @@ jobs:
     runs-on: ubuntu-latest    
     steps:
     - uses: actions/checkout@master
-    - uses: ./action-a
-      env:
-        MY_NAME: "Mona"
+    - uses: actions/setup-node@master
+#     - uses: ./action-a
+    - run: npm --version
+    - run: node --version
+#       env:
+#         MY_NAME: "Mona"
